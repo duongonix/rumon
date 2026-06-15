@@ -55,6 +55,9 @@ elseif ($updated -eq $content) {
 }
 Set-Content -LiteralPath $cargoPath -Value $updated -NoNewline
 
+Write-Host "==> Refreshing Cargo.lock"
+cargo metadata --format-version 1 | Out-Null
+
 if (-not $SkipChecks) {
   Write-Host "==> Running checks"
   cargo fmt --all --check

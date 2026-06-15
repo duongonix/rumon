@@ -49,6 +49,9 @@ elif ! grep -q "version = \"$VERSION\"" Cargo.toml; then
   exit 1
 fi
 
+echo "==> Refreshing Cargo.lock"
+cargo metadata --format-version 1 >/dev/null
+
 echo "==> Running checks"
 cargo fmt --all --check
 cargo check --workspace --locked

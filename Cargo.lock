@@ -978,7 +978,7 @@ checksum = "d6f6ff9a378485b298a5286656da665ba74413d36db0979633275d2e708145d4"
 
 [[package]]
 name = "rumon-cli"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "rumon-config",
  "rumon-core",
@@ -987,14 +987,14 @@ dependencies = [
 
 [[package]]
 name = "rumon-config"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "rumon-profiles",
 ]
 
 [[package]]
 name = "rumon-core"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "axum",
  "base64",
@@ -1018,7 +1018,7 @@ dependencies = [
 
 [[package]]
 name = "rumon-diff"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "rumon-shared",
  "similar",
@@ -1026,7 +1026,7 @@ dependencies = [
 
 [[package]]
 name = "rumon-hooks"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "globset",
  "regex",
@@ -1036,25 +1036,25 @@ dependencies = [
 
 [[package]]
 name = "rumon-media"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "rumon-shared",
 ]
 
 [[package]]
 name = "rumon-plugins"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "rumon-shared",
 ]
 
 [[package]]
 name = "rumon-profiles"
-version = "0.1.0"
+version = "0.1.1"
 
 [[package]]
 name = "rumon-protocol"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "rumon-shared",
  "serde",
@@ -1063,25 +1063,25 @@ dependencies = [
 
 [[package]]
 name = "rumon-remote"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "rumon-shared",
 ]
 
 [[package]]
 name = "rumon-runner"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "rumon-shared",
 ]
 
 [[package]]
 name = "rumon-shared"
-version = "0.1.0"
+version = "0.1.1"
 
 [[package]]
 name = "rumon-tui"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "crossterm 0.29.0",
  "ratatui",
@@ -1090,7 +1090,7 @@ dependencies = [
 
 [[package]]
 name = "rumon-watch"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "ignore",
  "notify",
