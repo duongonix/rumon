@@ -51,3 +51,9 @@ All notable changes to Rumon will be documented in this file.
 - Hardened integration modes with RFC3339 UTC timestamps, real `--json/--ndjson --once` watch collection, Axum/Tokio HTTP/SSE/WebSocket serving, native local-socket IPC via named pipes on Windows and Unix sockets on Unix, IPC shutdown, and realtime transport smoke coverage.
 - Updated the TUI status/footer polish with a highlighted `0.1.0` version label, balanced 50/50 Changes/Logs panels, and brighter quit/clear-log footer labels.
 - Reworked release deployment assets for Rumon, including GitHub Actions binary packaging, install scripts, and release tag helpers that update the workspace version.
+- Added the Astro Starlight Rumon docs landing page with a dark cyberpunk cyan theme, modular hero/dashboard components, and global Starlight styling overrides.
+- Made the Rumon docs landing page sidebar-free, forced the site to dark mode, and removed the Starlight theme switcher.
+- Split the landing page into a standalone Astro home route so `/` no longer renders through the Starlight docs frame or sidebar.
+- Improved docs sidebar active/hover contrast and replaced the home hero dashboard mockup with the real `public/rumon.png` product image.
+- Expanded the Astro Starlight docs into a complete Rumon documentation set covering installation, quick start, CLI, watcher, diff engine, runner, profiles, config, hooks, rule engine, TUI, integrations, guides, API, and troubleshooting.
+- Fixed Linux CI build by using `interprocess::os::unix::local_socket::FilesystemUdSocket` for Unix IPC filesystem socket names.

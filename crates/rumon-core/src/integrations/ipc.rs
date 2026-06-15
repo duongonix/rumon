@@ -192,8 +192,8 @@ fn ipc_name(path: &str) -> CoreResult<interprocess::local_socket::Name<'_>> {
 
 #[cfg(unix)]
 fn ipc_name(path: &str) -> CoreResult<interprocess::local_socket::Name<'_>> {
-    use interprocess::os::unix::local_socket::UdSocket;
+    use interprocess::os::unix::local_socket::FilesystemUdSocket;
 
-    path.to_fs_name::<UdSocket>()
+    path.to_fs_name::<FilesystemUdSocket>()
         .map_err(|error| CoreError::new(format!("invalid ipc path {path}: {error}")))
 }
