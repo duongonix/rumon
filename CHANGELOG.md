@@ -58,3 +58,4 @@ All notable changes to Rumon will be documented in this file.
 - Expanded the Astro Starlight docs into a complete Rumon documentation set covering installation, quick start, CLI, watcher, diff engine, runner, profiles, config, hooks, rule engine, TUI, integrations, guides, API, and troubleshooting.
 - Fixed Linux CI build by using `interprocess::os::unix::local_socket::FilesystemUdSocket` for Unix IPC filesystem socket names.
 - Fixed release tag scripts to refresh `Cargo.lock` after workspace version changes before running `--locked` checks.
+- Rewrote the root README with concise Rumon overview, install scripts, quick start, config example, commands, development, and docs instructions.
