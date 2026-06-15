@@ -1,0 +1,36 @@
+[workspace]
+members = [
+    "crates/rumon-cli",
+    "crates/rumon-config",
+    "crates/rumon-core",
+    "crates/rumon-diff",
+    "crates/rumon-hooks",
+    "crates/rumon-media",
+    "crates/rumon-plugins",
+    "crates/rumon-protocol",
+    "crates/rumon-profiles",
+    "crates/rumon-remote",
+    "crates/rumon-runner",
+    "crates/rumon-shared",
+    "crates/rumon-tui",
+    "crates/rumon-watch",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/duongonix/rumon"
+homepage = "https://github.com/duongonix/rumon"
+documentation = "https://github.com/duongonix/rumon/tree/main/docs"
+readme = "README.md"
+rust-version = "1.85"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
+
+[workspace.lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+module_name_repetitions = "allow"

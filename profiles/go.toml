@@ -1,0 +1,7 @@
+[run]
+cmd = "go run ."
+
+[watch]
+paths = ["."]
+extensions = ["go"]
+ignore = ["vendor"]

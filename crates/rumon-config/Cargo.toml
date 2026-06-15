@@ -1,0 +1,16 @@
+[package]
+name = "rumon-config"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+readme.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+rumon-profiles = { path = "../rumon-profiles" }
+
+[lints]
+workspace = true

@@ -1,0 +1,7 @@
+[run]
+cmd = "npm run dev"
+
+[watch]
+paths = ["src"]
+extensions = ["js", "jsx", "ts", "tsx"]
+ignore = ["node_modules", "dist"]

@@ -1,0 +1,57 @@
+version = 1
+profile = "rust"
+
+[watch]
+paths = ["src", "crates", "rumon.toml"]
+ignore = [".git", "target", "node_modules", "dist"]
+extensions = ["rs", "toml"]
+debounce_ms = 500
+recursive = true
+follow_symlink = false
+
+[run]
+cmd = "echo 10"
+restart = true
+restart_delay_ms = 300
+kill_signal = "term"
+clear_logs_on_restart = false
+
+[tui]
+left_panel_width = 50
+show_timestamp = true
+show_file_icons = true
+auto_scroll_logs = true
+max_log_lines = 5000
+
+[diff]
+track_line_changes = true
+track_column_changes = true
+show_inline_diff = true
+max_text_preview_lines = 20
+binary_hash = true
+
+[media]
+extract_image_metadata = true
+extract_audio_metadata = true
+extract_video_metadata = true
+show_file_size_change = true
+show_dimensions = true
+
+[hooks]
+before_restart = ""
+after_restart = ""
+on_success = ""
+on_failure = ""
+
+[[event_hooks]]
+name = "cargo check"
+
+events = [
+  "file_created",
+]
+
+paths = [
+  "src/**/*.rs",
+]
+
+cmd = "cargo check"

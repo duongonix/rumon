@@ -1,0 +1,22 @@
+[package]
+name = "rumon-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+readme.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "rumon"
+path = "src/main.rs"
+
+[dependencies]
+rumon-config = { path = "../rumon-config" }
+rumon-core = { path = "../rumon-core" }
+rumon-remote = { path = "../rumon-remote" }
+
+[lints]
+workspace = true

@@ -1,0 +1,7 @@
+[run]
+cmd = "python app.py"
+
+[watch]
+paths = ["."]
+extensions = ["py"]
+ignore = ["__pycache__", ".venv"]

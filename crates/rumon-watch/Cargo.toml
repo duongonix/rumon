@@ -1,0 +1,19 @@
+[package]
+name = "rumon-watch"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+readme.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+ignore = "0.4"
+notify = "8.2"
+notify-debouncer-full = "0.7"
+rumon-shared = { path = "../rumon-shared" }
+
+[lints]
+workspace = true

@@ -1,0 +1,6 @@
+[run]
+cmd = "docker compose up"
+
+[watch]
+paths = ["."]
+ignore = [".git", "target", "node_modules", "dist"]

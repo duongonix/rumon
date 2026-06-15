@@ -1,0 +1,18 @@
+[package]
+name = "rumon-tui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+readme.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+crossterm = "0.29"
+ratatui = "0.29"
+rumon-shared = { path = "../rumon-shared" }
+
+[lints]
+workspace = true

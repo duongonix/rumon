@@ -1,0 +1,8 @@
+//! CLI presentation helpers.
+
+/// Prints CLI help.
+pub fn print_help() {
+    println!(
+        "Rumon\n\nUsage:\n  rumon\n  rumon tui [--config <PATH>]\n  rumon watch [--json|--ndjson] [--once] [--config <PATH>]\n  rumon server [--host <HOST>] [--port <PORT>] [--config <PATH>]\n  rumon daemon [--ipc] [--config <PATH>]\n  rumon init\n  rumon [OPTIONS] -- <COMMAND>\n  rumon remote agent --token <TOKEN> [--addr <ADDR>] [--node <NAME>]\n  rumon remote connect --token <TOKEN> [--addr <ADDR>] [--node <NAME>]\n\nCommands:\n  tui                     Open the TUI dashboard\n  watch                   Emit file events as JSON/NDJSON\n  server                  Run HTTP/SSE/WebSocket server\n  daemon                  Run local IPC daemon\n  init                    Create rumon.toml in the current directory\n\nOptions:\n  -c, --config <PATH>      Config file\n  -w, --watch <PATH>       Watch path\n  -i, --ignore <PATH>      Ignore path\n  -e, --ext <EXT>          Watch extension\n      --cmd <COMMAND>      Command to run\n      --cwd <PATH>         Command working directory\n      --debounce <MS>      Debounce window\n      --no-tui             Disable TUI\n      --clear              Clear logs on restart\n      --once               Run command once and exit\n      --no-restart         Watch without restart\n  -v, --verbose            Verbose output\n  -q, --quiet              Quiet output\n  -V, --version            Print version\n  -h, --help               Print help\n\nRemote:\n      --addr <ADDR>        Remote address, default 127.0.0.1:4040\n      --node <NAME>        Node name, default local\n      --token <TOKEN>      Shared authentication token"
+    );
+}

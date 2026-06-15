@@ -1,0 +1,19 @@
+[package]
+name = "rumon-hooks"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+readme.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+globset = "0.4"
+regex = "1"
+rumon-config = { path = "../rumon-config" }
+rumon-shared = { path = "../rumon-shared" }
+
+[lints]
+workspace = true
