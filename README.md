@@ -45,13 +45,13 @@ Rumon is a modern file monitor for developers. It watches your project, shows wh
 Linux/macOS:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/duongonix/rumon/main/scripts/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/duongonix/rumon/master/scripts/install.sh | sh
 ```
 
 Windows (PowerShell):
 
 ```powershell
-iwr -useb https://raw.githubusercontent.com/duongonix/rumon/main/scripts/install.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/duongonix/rumon/master/scripts/install.ps1 | iex
 ```
 
 ### Install specific version
@@ -59,13 +59,13 @@ iwr -useb https://raw.githubusercontent.com/duongonix/rumon/main/scripts/install
 Linux/macOS:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/duongonix/rumon/main/scripts/install.sh | sh -s -- v0.1.0
+curl -fsSL https://raw.githubusercontent.com/duongonix/rumon/master/scripts/install.sh | sh -s -- v0.1.0
 ```
 
 Windows (PowerShell):
 
 ```powershell
-& ([scriptblock]::Create((iwr -useb https://raw.githubusercontent.com/duongonix/rumon/main/scripts/install.ps1))) -Version v0.1.0
+& ([scriptblock]::Create((iwr -useb https://raw.githubusercontent.com/duongonix/rumon/master/scripts/install.ps1))) -Version v0.1.0
 ```
 
 Verify:
